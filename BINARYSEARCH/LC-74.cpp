@@ -1,4 +1,3 @@
-// #include <iostream>
 
 // You are given an m x n integer matrix matrix with the following two properties:
 
@@ -14,8 +13,8 @@ using namespace std;
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
-        int n = matrix.size();
-        int m = matrix[0].size();
+        int n = matrix.size();  // no of row in matrix
+        int m = matrix[0].size(); // no of column on matrix
         int low = 0, high = (m*n)-1;
         while(low<=high){
             int mid = (low+high)/2;
