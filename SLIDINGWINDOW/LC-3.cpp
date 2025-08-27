@@ -5,8 +5,8 @@ class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
         int n = s.size(), maxLen =0;
-        // for(int i =0;i<n;i++){    // TC -> O(N^2)
-        //     vector<int> freq(256,0); // SC-> O(256)
+        // for(int i =0;i<n;i++){    // TC -> O(N^2) brute approach
+        //     vector<int> freq(256,0); // SC-> O(256) 
         //     int length;
         //     for(int j =i;j<n;j++){
         //         if(freq[s[j]]==1) break;
